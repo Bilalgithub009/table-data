@@ -1,0 +1,111 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container, .dashboard {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+text-align: center;
+margin-bottom: 20px;
+} 
+
+.card {
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+padding: 20px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+.card h2, .card h3 {
+margin: 0 0 10px;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="number"] {
+width: calc(100% - 20px);
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+button {
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+background-color: #007BFF;
+color: #fff;
+cursor: pointer;
+margin-top: 10px;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+.dashboard {
+display: none;
+}
+
+.cards {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.cards .card {
+flex: 1;
+margin: 0 10px;
+padding: 10px;
+}
+
+.cards .card.present {
+ /* background-color: #d4edda; */ 
+ background-color: green; 
+}
+
+ .cards .card.absent {
+/* background-color: #f8d7da; */
+background-color: red;
+}
+
+.cards .card.leave {
+ /* background-color: #fff3cd;  */
+  background-color: yellow; 
+} 
+table {
+width: 100%;
+border-collapse: collapse;
+margin-bottom: 20px;
+}
+
+table, th, td {
+border: 3px solid #ccc;
+}
+
+th, td {
+padding: 10px;
+text-align: center;
+}
+ 
+th {
+background-color: #f2f2f2;
+} 
+
+#leaveDetails{
+height: auto;
+width: auto;
+
+}

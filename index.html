@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+     
+  
+      <div class="container">
+        <h1>Student Portal</h1>
+        <div class="card">
+            <h2>Student Registration</h2>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password"  placeholder="Password"  required ="">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+    
+    <div id="dashboard" class="dashboard">
+        <div class="cards">
+            <div class="card present" id="presentCard">
+                <h3>Present</h3>
+                <p id="presentCount">0</p>
+            </div>
+            <div class="card absent" id="absentCard">
+                <h3>Absent</h3>
+                <p id="absentCount">0</p>
+            </div>
+            <div class="card leave" id="leaveCard">
+                <h3>Leave</h3>
+                <p id="leaveCount">0</p>
+            </div>
+        </div>
+
+        <div class="student-form">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="fatherName" placeholder="Father Name">
+            <input type="text" id="rollNo" placeholder="Roll No">
+            <input type="number" id="age" placeholder="Age">
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Father Name</th>
+                    <th>Roll No</th>
+                    <th>Age</th>
+                    <th>Present</th>
+                    <th>Absent</th>
+                    <th>Leave</th>
+                </tr>
+            </thead> 
+            <tbody id="studentTable">
+             Students will be listed here  
+              </tbody>
+        </table>
+
+        <div class="cards">
+            <div class="card present" id="presentInfo">
+                <h3>Present</h3>
+                <p id="presentDetails"></p>
+            </div>
+            <div class="card absent" id="absentInfo">
+                <h3>Absent</h3>
+                <p id="absentDetails"></p>
+            </div>
+            <div class="card leave" id="leaveInfo">
+                <h3>Leave</h3>
+                <p id="leaveDetails"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>  
